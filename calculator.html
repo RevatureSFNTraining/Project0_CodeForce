@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<a href="AboutMe.html">About Me</a>
+<html>
+    <head>
+        <link rel="stylesheet" href="Style.css" />
+        <title>Calculator</title>
+    </head>
+    <body>
+        <div>
+        <script>
+            var inputIdFirst = "valueOfA",inputIdSecond = "valueOfB",outputId = "resultHere";
+            var getInputs = function(id) {
+              return parseInt(document.getElementById(id).value);
+            }
+            var showOutput = function(outputValue, outputIdAsArg) {
+              document.getElementById(outputId).innerHTML = outputValue;
+            }
+            var manuplateAs = function(operationName, valueOfA, valueOfB) {
+              if(operationName == 'add')
+                return valueOfA + valueOfB;
+              else if(operationName == 'subtract')
+                return valueOfA - valueOfB;
+              else if(operationName == 'multiply by')
+                return valueOfA * valueOfB;
+              else if(operationName == 'divide by')
+                return valueOfA / valueOfB; 
+            } 
+            var operation = function(operationName){
+              x = getInputs(inputIdFirst);
+              y = getInputs(inputIdSecond);
+              output = manuplateAs(operationName, x, y);
+              showOutput(output);
+              console.log(x + " " + operationName + " " + y + " = " + output)
+              console.log(this)
+            };
+          </script>
+          <p>
+          Enter first number
+          <input type="number" id="valueOfA">
+          Enter second number
+          <input type="number" id="valueOfB">
+          <button onclick="operation('add')"> Add </button>
+          <button onclick="operation('subtract')"> Subtract</button>
+          <button onclick="operation('multiply by')"> Multiply</button>
+          <button onclick="operation('divide by')"> Divide</button>
+          <h1 id="resultHere"></h1>
+          </p>
+        </div>
+    </body>
+</html>
