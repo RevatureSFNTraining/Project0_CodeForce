@@ -1,3 +1,7 @@
 # Project0_CodeForce
 
-Added Readme file
+Bailey Kandler
+
+Project 0 - Custom Business Webpage
+
+Parts - Wireframe Design, LWC OSS Implementation, Styling
