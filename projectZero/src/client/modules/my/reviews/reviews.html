@@ -1,0 +1,39 @@
+<template>
+  <div class="page">
+    <h2>Customer Reviews</h2>  
+    <input type="checkbox" onchange={handleChange}>
+    <label>Click to see customer reviews</label>
+    <template if:true={areReviewsVisible}>
+        <div>
+        <br>
+        <h4>From: John Doe</h4>
+        <br>
+        <p>
+                “Matt was extremely professional! He accommodated to our schedule and provided 
+                us with video of our duct before and after work was performed with drastic 
+                results. Our dryer works even better after his work was performed. We will be 
+                using him again and highly recommend him to anyone in the future.”
+        </p>
+        <br>
+        <br>
+        <h4>From: Jane Smith</h4>
+        <br>
+        <p>
+            “I noticed my dryer was taking forever to dry my clothes, I called around and 
+             decided to go with Vent-Tech and glad I did. Matt came out and explained to me what 
+            could be causing the issue, he also showed me pictures of the vent before the cleaning 
+            and it was packed with lint! It was bad, I never had it cleaned before. He did an 
+            awesome job and my dryer is working much better now. Thank you!”
+        </p>
+        <br>
+        <br>
+        <h4>From: John Black</h4>
+        <br>
+        <p>
+                "Matt did a wonderful and thorough job. I highly recommended his services. My dryer has 
+                never worked so good. Great job Matt!”
+        </p>
+        </div>
+    </template>
+  </div>
+</template>
