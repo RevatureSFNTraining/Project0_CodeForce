@@ -1,0 +1,7 @@
+make a webpage that has a headder at the top with a nav bar below that. on the body make a 
+textbox that users can input a number into, and below it will show a pokemon.png, 
+the pokemon type and grab the stats and put them into a chart.
+
+when you hover over the chart it will tell you the quantity of the stat hovered. 
+
+make another page with information about tournamates, and signing up for it.

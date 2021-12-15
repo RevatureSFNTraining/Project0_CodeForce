@@ -1,0 +1,38 @@
+<template>
+    <h2 id=monName>Pokemon Name</h2>
+    <img id="monPic" class = "monPic" alt = "Pokemon Image" src = "..\resources\pokeball.png" height = 31% width = 31%><br>
+    <label>Enter the national dex number of a pokemon you want to search: </label><input type="number" class = "search" value = 1 onchange = {getPokemon}>
+    <input type="button" id = "search" onclick={getPokemon} value = "Search"><br>
+    <span class = typeA> </span><span class=typeB> </span><br>
+    <br>
+    <table>
+        <tr>
+            <td>Hp</td>
+            <td class = "hp"> </td>
+        </tr>
+        <tr>
+            <td>Attack</td>
+            <td class="a"></td>
+        </tr>
+        <tr>
+            <td>Defense</td>
+            <td class="d"></td>
+        </tr>
+        <tr>
+            <td>Special Attack</td>
+            <td class="sa"></td>
+        </tr>
+        <tr>
+            <td>Special Defence</td>
+            <td class="sd"></td>
+        </tr>
+        <tr>
+            <td>Speed</td>
+            <td class="spd"></td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td class="total"></td>
+        </tr>
+    </table>
+</template>
