@@ -1,0 +1,4 @@
+@import 'my/styles';
+.framing {
+    background-image: radial-gradient(circle, lightblue, violet, orangered);
+}

@@ -1,0 +1,18 @@
+<template>
+    <h1>Games for Sale</h1>
+    <p>
+        Check the box below to change the display between description and price.<br>
+        Also, click the images to the right to see some random games.
+    </p>    
+    <input type="checkbox" onchange={handleChange}> 
+    <template if:false={showDescription} for:each={items} for:item="item">
+        <li key={item.id}>
+            <b>{item.Name}</b> : <em>{item.Desc}</em>
+        </li>
+    </template>
+    <template if:true={showDescription} for:each={items} for:item="item">
+        <li key={item.id}>
+            <b>{item.Name}</b> : <em>${item.Price}</em>
+        </li>
+    </template>
+</template>

@@ -1,0 +1,9 @@
+*:not(h1, label) {
+    font-size: 18px;
+}
+h1 {
+    font-style: italic;
+}
+label {
+    font-size: 12px;
+}

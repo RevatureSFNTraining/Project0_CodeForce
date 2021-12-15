@@ -1,0 +1,61 @@
+<template>
+    <!--
+        Project 0
+        Bailey Kandler
+
+        Goals : 
+            - Multiple Components w/ User Interaction
+            - At Least one Conditional Rendering Component
+            - Consistent Style
+
+        Stlye Goal :
+            - SLDS Grid to have Col/Row Positioning
+            - Place Elements within Grid Items
+
+        Technical Goals : 
+            - Have a Checkbox to Display Pop-Up (i.e img) (Conditional Render)
+            - Have a Button to Switch between Random images displayed in Panels
+    -->
+
+    <!-- Parent Class - Will hold Components within -->
+    
+    <!-- SLDS Grid -->
+    <div class="slds-grid slds-grid_vertical" style="margin-top: 50px;">
+        <div class="slds-col" 
+            style="background-image: radial-gradient(circle, lightyellow, lightgreen, transparent 65%);">
+            <span> 
+                <!-- Child Component for Page Header -->
+                <my-header></my-header> 
+            </span>
+        </div>
+        <div class="slds-grid" style="height:500px">
+            <div class="slds-col slds-size_4-of-7">
+                <span> 
+                    <!-- Child Component for Body -->
+                    <my-body></my-body>
+                </span>
+            </div> 
+            <div class="slds-grid slds-grid_vertical" style="width: 500px">
+                <div class="slds-col">
+                    <span> 
+                        <!-- Child Component for Panel -->
+                        <my-panel></my-panel>
+                    </span>
+                </div>
+                <div class="slds-col">
+                    <span> 
+                        <!-- Child Component for Panel -->
+                        <my-panel></my-panel>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="slds-col" style="background-image: radial-gradient(circle, lightyellow, lightgreen, transparent 65%);">
+            <span> 
+                <!-- Child Component for Page Footer -->
+                <my-footer></my-footer> 
+            </span>
+        </div>
+    </div>
+
+</template>

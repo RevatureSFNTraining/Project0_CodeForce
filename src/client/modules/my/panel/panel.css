@@ -1,0 +1,9 @@
+.display {
+    width: 275px;
+    height: 165px;
+}
+.content {
+    object-fit: scale-down;
+    width: 250px;
+    height: 150px;
+}
