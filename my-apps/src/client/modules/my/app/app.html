@@ -1,0 +1,21 @@
+<template>
+    <div class="slds-grid" style="margin-bottom: 10px">
+        <div class="slds-col slds-size_1-of-4" style="background-color: rgb(250, 148, 241);"></div>
+        <div class="slds-col slds-size_2-of-4" style="border:5px solid black; height:140px; background-color: rgb(155, 235, 135)">
+            <h1>Cookie Force</h1>
+        </div>
+        <div class="slds-col slds-size_1-of-4" style="background-color: rgb(250, 148, 241);">
+        </div>
+    </div>
+    <div class="slds-grid slds-wrap">
+        <template for:each={contacts} for:item="contact">
+            <div key={contact.Id} class="slds-col slds-size_1-of-3">
+                <lightning-card>
+                    <p class="slds-p-horizontal_small">{contact.Name}</p>
+                    <img src={contact.Picture} alt="Dirty Vent">
+                </lightning-card>
+            </div>
+        </template>
+    </div>
+
+</template>

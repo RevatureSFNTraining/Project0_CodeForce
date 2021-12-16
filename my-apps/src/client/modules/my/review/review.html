@@ -1,0 +1,31 @@
+<template>
+    <div class="page">
+      <h2>Customer Reviews</h2>  
+      <input type="checkbox" onchange={handleChange}>
+      <label>Click to see customer reviews</label>
+      <template if:true={areReviewsVisible}>
+          <div>
+          <br>
+          <h4>From: John Doe</h4>
+          <br>
+          <p>
+                  “Chocolate chip cookies are superb!”
+          </p>
+          <br>
+          <br>
+          <h4>From: Jane Smith</h4>
+          <br>
+          <p>
+              “I like the raisin cookies!”
+          </p>
+          <br>
+          <br>
+          <h4>From: John Black</h4>
+          <br>
+          <p>
+                  "macaron taste pretty good!”
+          </p>
+          </div>
+      </template>
+    </div>
+  </template>
